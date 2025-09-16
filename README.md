@@ -20,4 +20,31 @@ This system allows visitors to explore animals, events, and contact information.
 1. Install [XAMPP](https://www.apachefriends.org/).
 2. Place this project folder inside the `htdocs` directory.
 3. Import the provided `db.sql` file into phpMyAdmin.
-4. Open a browser and go to:  
+4. Open a browser and go to: http://localhost/<your-folder-name>
+
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home Page](screenshots/home.png)
+
+### ℹ️ About Us Page
+![About Us Page](screenshots/aboutus.png)
+
+### 📷 Gallery Page
+![Gallery Page](screenshots/gallery.png)
+
+### 🐾 Animal Info Page
+![Animal Info Page](screenshots/animalinfo.png)
+
+### 📅 Events Page
+![Events Page](screenshots/events.png)
+
+### ✉️ Feedback Form
+![Feedback Form](screenshots/feedbackform.png)
+
+### 🍔 Food Outlets Page
+![Food Outlets Page](screenshots/foodoutlets.png)
+
+### 🔑 Admin Page
+![Admin Page](screenshots/admin.png)
