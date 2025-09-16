@@ -19,7 +19,7 @@ This system allows visitors to explore animals, events, and contact information.
 ## 📂 How to Run
 1. Install [XAMPP](https://www.apachefriends.org/).
 2. Place this project folder inside the `htdocs` directory.
-3. Import the provided `db.sql` file into phpMyAdmin.
+3. Import the provided `zoopark (1).sql` file into phpMyAdmin.
    - Open phpMyAdmin (http://localhost/phpmyadmin)
    - Create a new database named `zoopark`
    - Click Import → choose `database/zoopark.sql` → Go
