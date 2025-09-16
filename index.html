@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Park</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for icons-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> <!--For swiper buttons-->
+   
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <i class="fa fa-linux"></i>Zoo Park</a> <!--# To go to the header-->
+    <!--Navigation-->
+        <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#animal">Animal Info</a>
+        <a href="events.php">Events</a>
+        <a href="register.php">Register</a>
+        <a href="#feedback">Feedback</a>
+        <a href="food-outlets.html">Food Outlets</a>
+        
+    </nav>
+
+    <div class="icons">
+        <a href="login.html" id="user" class="fa fa-user"></a>
+    </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Discover The Magic<br>
+            Of Wildlife At <br> Zoo Park</h3>
+        </div>
+    </section>
+
+    <!--About Us-->
+    <section class="about" id="about">
+        <h2 class="title">About Us</h2>
+        <div class="box-container">
+            <div class="img">
+                <img src="cockatoo.jpg" alt="cockatoo bird" class="cockatoo-img">
+            </div>
+
+            <div class="content">
+                <h3 class="content-title"> Welcome To ZOO PARK!</h3>
+                    <p>Our goal at Zoo Park is to introduce you to the wonders of animals up close. Our goals are to promote conservation initiatives, develop an appreciation for animals, and provide life-changing educational opportunities.</p>
+                    <h3 class="content1">What We Do</h3>
+                    <ul class="points">
+                        <li><strong>Animal Care:</strong>Superior treatment for each animal, emphasizing their well-being, stimulation, and contentment.</li>
+                        <li><strong>Conservation:</strong>International activities aimed at safeguarding endangered species and their habitats.</li>
+                        <li><strong>Education:</strong>Visitors are inspired and educated about wildlife conservation through interactive exhibits and events.</li>
+                        <li><strong>Research:</strong>Learning more about the behavior and health of animals to help wildlife everywhere.</li>
+                        <li><strong>Sustainability:</strong>Putting eco-friendly practices into practice and encouraging environmental care in whatever we do.</li>
+                    </ul>
+                     
+        </div>
+    </section>
+
+<!--Gallery-->
+
+    <section class="gallery" id="gallery">
+        <h2 class="heading">GALLERY</h2>
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!--slide1-->
+            <div class="swiper-slide">
+                <div class="image">
+                    <img src="lion-slider.jpg" alt="lion">
+                </div>
+            </div>
+            <!--slide2-->
+            <div class="swiper-slide">
+                <div class="image">
+                    <img src="giraffe-slider.webp" alt="giraffe">
+                </div>
+            </div>
+            <!--slide3-->
+            <div class="swiper-slide">
+                <div class="image">
+                     <img src="fox-slider.webp" alt="mackow">
+                </div>
+            </div>
+            <!--slide4-->
+            <div class="swiper-slide">
+                <div class="image">
+                     <img src="peackock-slider.webp" alt="elephant">
+                </div>
+            </div>
+            <!--slide5-->
+            <div class="swiper-slide">
+                <div class="image">
+                    <img src="lemur-slider.webp" alt="chimpanzee">
+                </div>
+            </div>
+        </div>
+        <!--Adding Arrows-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!--Animal info-->
+    <section class="animal" id="animal">
+        <h2 class="heading">Animal Info</h2>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="grey crowned crane.webp" alt="grey crowned crane">
+                <div class="content">
+                    <h3>Grey Crowned Crane</h3>
+                    <button id="openPopup1" class="btn">See Details</button>
+                    
+                    <div id="popup1" class="popup">
+                        
+                        <div class="popup-content">
+                            <span class="close">&times;</span> <!--Close button-->
+                            <h2 class="sub-heading">Grey Crowned Crane</h2>
+                            <p class="details">The tiny golden feathers on these elegant cranes' heads, which form a majestic crown, are a magnificent sight. 
+                                With a vibrant red wattle on their necks, their heads are white and black. 
+                                The tips of their wings are a mixture of rust, gold, and white, and their light gray necks merge into their darker grey backs. 
+                                Witnessing a group of these exquisite birds fly into view is very astonishing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="brown and beige mandrill.webp" alt="brown and beige mandrill">
+                <div class="content">
+                    <h3>Brown And Beige Mandrill</h3>
+                    <button id="openPopup2" class="btn">See Details</button>
+                    
+                    <div id="popup2" class="popup">
+                        
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <h2 class="sub-heading">Brown And Beige Mandrill</h2>
+                            <p class="details">This Old World monkey species is called the Mandrill (Mandrillus sphinx). 
+                                It shares a close kinship tree with baboons and still closer with drills. 
+                                It's located in Equatorial Guinea, Congo, Gabon, and southern Cameroon. 
+                                Mosaics of forest and savanna are home to mandrills mostly. They inhabit hordes, which are large groups. 
+                                Fruits and insects make up the majority of the omnivorous diet of mandrills. 
+                                June to October is the time of year they breed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="green crested lizard.webp" alt="green crested lizard">
+                <div class="content">
+                    <h3>Green Crested Lizard</h3>
+                    <button id="openPopup3" class="btn">See Details</button>
+                    
+                    <div id="popup3" class="popup">
+                        
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <h2 class="sub-heading">Green Crested Lizard</h2>
+                            <p class="details">Green Crested Lizards are beautiful animals that live in parklands and disturbed regions in addition to primary and secondary forests. 
+                                The head occasionally has a blue tint, while the body has a vivid green color. 
+                                Browning of the body can occur when one feels frightened or agitated. 
+                                An appealing neck crest is possessed by men. More than 75% of its length is comprised of the tail.
+                                The recognized locations of this lizard are Sumatra, Borneo, Sulawesi and other Eastern Indonesian regions; Sumatra, Java; Peninsular Malaysia; Singapore; 
+                                and several Philippine islands, ranging from Luzon in the north to Mindanao and Palawan in the south. It's not in Bali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="red panda.webp" alt="red panda">
+                <div class="content">
+                    <h3>Red Panda</h3>
+                    <button id="openPopup4" class="btn">See Details</button>
+                    
+                    <div id="popup4" class="popup">
+                        
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <h2 class="sub-heading">Red Panda</h2>
+                            <p class="details">With thick russet fur and a body like a bear, the red panda dwarfs a domestic cat in size. 
+                                It has white markings on the side of its head and above its little eyes, and its abdomen and limbs are also black. 
+                                Mostly found in trees, red pandas are incredibly adept and graceful acrobatic animals. 
+                                The Eastern Himalayas comprise about half of the red panda's range. During winter, they cover themselves with their long, bushy tails, probably for warmth, and for balance. 
+                                The word "ponya," which in Nepali refers to an animal that eats bamboo or plants, is thought to have originated from the name of this primarily herbivorous animal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="white meerkat.webp" alt="white meerkat">
+                <div class="content">
+                    <h3>White Meerkat</h3>
+                    <button id="openPopup5" class="btn">See Details</button>
+                    
+                    <div id="popup5" class="popup">
+                        
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <h2 class="sub-heading">White Meerkat</h2>
+                            <p class="details">Very friendly, the meerkat is constantly under the watchful eye of a sentry or two. 
+                                In their exhibit, the gang is frequently observed playing fighting, harvesting food, lounging in the sun, and excavating tunnels.
+                                Given their natural curiosity, meerkats love investigating new objects, particularly enrichment items that are meant to keep the group engaged both cognitively and physically. 
+                                Their favorite food is insects, and they adore anything that is meat!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="macaw.webp" alt="macaw">
+                <div class="content">
+                    <h3>Macaw</h3>
+                    <button id="openPopup6" class="btn">See Details</button>
+                    
+                    <div id="popup6" class="popup">
+                        
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <h2 class="sub-heading">Macaw</h2>
+                            <p class="details">Typically, groups of 10 to 30 macaws get together to socialize and exhibit intelligence. 
+                                Through the canopy of the jungle, their loud yells, squawks, and screams can be heard. 
+                                To identify themselves, indicate territory, and communicate with one another, macaws use vocalizations. 
+                                Certain animals are even able to mimic speech. At dusk, flocks may travel great distances to forage for fruit, nuts, insects, and snails. 
+                                At night, they lay low in the trees. Certain animals may benefit from eating moist dirt to help soothe their tummies and counteract the toxins in their fruit-based diet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="scarlet ibis.webp" alt="scarlet ibis">
+                <div class="content">
+                    <h3>Scarlet Ibis</h3>
+                    <button id="openPopup7" class="btn">See Details</button>
+                    
+                    <div id="popup7" class="popup">
+                        
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <h2 class="sub-heading">Scarlet Ibis</h2>
+                            <p class="details">The scarlet ibis uses its thin, curved bill to pierce through grass, mud, and shallow water for feeding. 
+                                The carotene in the crustaceans that the scarlet ibis feeds on gives it its striking red color, just like flamingos do. 
+                                Because it travels and breeds in flocks, the scarlet ibis is a gregarious bird. Ibises fly in V-shaped formations or diagonal lines. 
+                                For trailing birds, this configuration reduces wind resistance. When an ibis loses energy, it falls to the rear of the group and another one moves up to the front. 
+                                Except from their grunts and croaks in breeding grounds, these birds are relatively silent. With fossil records dating back 60 million years, ibises are a very old lineage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="striped bengal tiger.webp" alt="striped bengal tiger">
+                <div class="content">
+                    <h3>Striped Bengal Tiger</h3>
+                    <button id="openPopup8" class="btn">See Details</button>
+                    
+                    <div id="popup8" class="popup">
+                        
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <h2 class="sub-heading">Striped Bengal Tiger</h2>
+                            <p class="details">Because they hunt primarily at dawn and nightfall, tigers can blend in with the long grasses thanks to their stripes. They cannot pursue prey over great distances, therefore they stalk and pounce.
+                                Usually traveling alone, the territorial male tiger marks his territory with urine, droppings, and scratches to deter intruders.
+                                In a single meal, a tiger can eat up to 40 kilograms of meat.
+                                It's possible for tigers to pull their meal to water. They are frequently observed cooling off in pools of water or in the shade.White tigers are not albinos because they have blue eyes and stripes that are colored.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--Feedback Form-->
+<section class="feedback" id="feedback">
+    <h2 class="heading">Feedback Form</h2>
+    <form action="feedback.php" method="POST"> <!--Send data to the server-->
+        <div class="inputbox">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+ 
+        <div class="inputbox">
+            <input type="number" name="mobile" placeholder="Mobile Number" required>
+        </div>
+ 
+        <textarea name="message" cols="30" rows="10" placeholder="Feel Free To Share Your Thoughts" required></textarea>
+ 
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+ </section>
+ 
+    <!--Contact Info-->
+    <section class="contact" id="contact">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fa fa-linux"></i>ZooPark</h3>
+                <p>Where Every Visit Is A Wild</p>
+                <p class="days"><i class="fa fa-calendar-check-o"></i>Monday - Saturday</p>
+                <p class="time"><i class="fa fa-clock-o"></i> 6:00am - 6:00pm</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="days"><i class="fa fa-phone"></i>011-5676749</a>
+                <a href="#" class="days"><i class="fa fa-envelope"></i>zoopark@gmail.com</a>
+                <a href="#" class="days"><i class="fa fa-map-marker"></i>231A, Stanly Thilakarathna Mawatha, Nugegoda</a>
+            </div>
+
+            <div class="media">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!--For swiper buttons-->
+    <script src="script.js"></script>
+
+</body>
+</html>

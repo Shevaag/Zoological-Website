@@ -1,0 +1,958 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Set box-sizing to border-box so that padding and borders are included in the element's total width and height.*/
+    outline: none;
+    border: none;
+    text-decoration: none; /*Removes any default text decorations*/
+    text-transform: capitalize;
+    transition: .2s linear; /*Specifies a transition effect for property changes.*/
+}
+
+html{
+    font-size: 65%;
+    overflow-x: hidden; /*Prevents horizontal scrolling.*/
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem; /* Helps to ensure that the element is not hidden behind fixed headers or other elements.*/
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1000;
+    background: white;
+    box-shadow: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: black;
+    cursor: not-allowed;
+    text-transform: uppercase;
+    
+}
+
+.header .logo i{
+    color: black;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    color: black;
+    margin: 1rem;
+}
+
+.header .navbar a:hover{
+    color: rgb(21, 163, 219);
+}
+
+.header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+.header .icons div:hover{
+    color: rgb(21, 163, 219);
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(cheetahbg.jpeg) no-repeat;
+    background-size: cover; /*Ensures the background image covers the entire container*/
+    background-position: top; /*The image will be resized to cover the container completely*/
+
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    color: white;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 100;
+}
+
+.header .icons .fa{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.header .icons .fa:hover{
+    color: rgb(21, 163, 219);
+}
+
+/*About*/
+.about {
+    position: relative;
+    background-color: #f0f8ff;
+    padding: 2rem;  
+}
+
+.about .box-container {
+    display: flex;
+    align-items: flex-start; /*Ensures that items are positioned at the top of the flex container*/
+    flex-wrap: wrap; /*adjusting to fit within the container's width or height*/
+    gap: 6rem;
+}
+
+.about .box-container .img {
+    flex: 0 0 auto;
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden; /* for a circular crop */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .box-container .img .cockatoo-img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover; /*Ensures that the content of the element covers the entire area*/
+}
+
+.about .content {
+    flex: 1; /*allows the item to grow and fill available space in the container.*/
+    max-width: 60%;
+}
+
+.about h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 1;
+    position: absolute;
+    margin-top: 4rem;
+    color: black;
+}
+
+.about .content .content-title {
+    margin-top: 5rem;
+    font-size: 4rem;
+    color: black;
+}
+
+.about .content p {
+    font-size: 2rem;
+    color: crimson;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .content .content1 {
+    font-size: 3rem;
+    color: black;
+}
+
+.points {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/*Galley*/
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:mediumturquoise ;
+    margin-bottom: 3rem;
+}
+
+.gallery{
+    background-color: bisque;
+    padding: 2rem 0;
+}
+
+.gallery .slide .image{
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .slide .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .swiper-container .swiper-button-prev, 
+.gallery .swiper-container .swiper-button-next{
+   color: white !important;
+}
+
+.gallery .swiper-container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.gallery .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-container{
+    position: relative;
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery .image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*Animal Info*/
+.animal .heading{
+    color: chartreuse;
+}
+
+.animal .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr)); /*automatically creates as many columns as possible based on available space*/
+    gap: 2rem;
+}
+
+.animal .box-container .box{
+    height: 100%;
+    position: relative;
+    overflow: hidden; /*Hides any content that extends beyond the element’s boundaries*/
+}
+
+.animal .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.animal .box-container .box:hover img{
+    transform: scale(1.1); /*element will be 110% of its original size*/
+}
+
+.animal .box-container .box .content{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.animal .box-container .box .content h3{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.animal .box-container .box .content .btn{
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.animal .box-container .box .content .btn:hover{
+    background-color: darkred;
+}
+
+.animal .box .popup{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    
+}
+
+.animal .box .popup-content{
+    background-color: white;
+    padding: 2rem;
+    position: relative;
+    z-index: 1001;
+    border-radius: 1rem;
+}
+
+.animal .box .popup-content .close{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 3.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.animal .box-container .box .popup-content .details{
+    color: lightcoral;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.animal .box-container .box .popup-content .sub-heading{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+}
+
+/*Feedback Form*/
+.feedback{
+    background-color:antiquewhite;
+}
+
+.feedback .heading{
+    color: mediumspringgreen;
+}
+
+.feedback form{
+    padding: 2rem 10%;
+    text-align: center;
+}
+
+.feedback form .inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback form .inputbox input, .feedback form textarea{
+    font-size: 1.7rem;
+    width: 49%;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+.feedback form textarea{
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+
+.feedback .btn{
+    display: inline-block;
+    padding: 15px 15px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: chocolate;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Contact Info*/
+.contact{
+    background-color: chocolate;
+    background-size: cover;
+    padding: 3rem 7%;
+}
+.contact .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr)); /*automatically fits as many columns as possible into the container*/
+    gap: 1.5rem;
+}
+
+.contact .box-container .box h3{
+    font-size: 2.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.contact .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: white;
+    padding: 1rem 0;
+}
+
+.contact .box-container .box .days{
+display: block;
+font-size: 1.5rem;
+color: white;
+padding: 1rem 0;
+text-transform: none;
+cursor: text;
+}
+
+.contact .box-container .box .days i{
+    color: white;
+    padding-right: .5rem;
+}
+
+.contact .box-container .media a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+    margin-right: 1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/*Admin Login*/
+.login .navbar {
+    position: absolute; /*The element is positioned based on the top, right, bottom, and left properties*/
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+}
+
+.login .navbar a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.login .navbar a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    margin-bottom: 15px;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+
+/*Events*/
+.header2 {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header2 .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+.header2 .navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.header2 .navbar a:hover{
+    color: lightblue;
+}
+
+.header2 .icons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.events {
+    padding: 50px 20px;
+    background-color: khaki;
+}
+
+.events .heading {
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.events .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Search Bar*/
+#eventSearch {
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+#eventSearch:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+section.events2 .heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.events .events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-title {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.event-box p {
+    margin: 10px 0;
+    color: #666;
+}
+
+/*Food Outlets*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.background-wrapper {
+    background-image: url('food-outlets.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: white;
+}
+
+
+.food-header .logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    cursor: not-allowed;
+    font-weight: bold;
+}
+
+.food-header {
+    background-color: aquamarine;
+    color: #fff;
+    padding: 1rem 5%;
+    text-align: center;
+}
+
+.food-header h1 {
+    margin: 0;
+}
+
+.food-header .navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.food-header .navbar a:hover{
+    color: lightblue;
+}
+
+.food-nav ul {
+    list-style: none; /*Removes all default list styling*/
+    padding: 0;
+    margin: 0;
+}
+
+.food-nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.food-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.food-nav ul li a:hover {
+    color: #4db6ac;
+}
+
+main {
+    padding: 2rem 5%;
+}
+
+.food-outlets {
+    background-color: #f9f9f9;
+    padding: 5rem;
+    border-radius: 8px;
+}
+
+.food-outlets p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.food-outlets h2{
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.food-outlets .food-outlet h3{
+    color: black;
+}
+
+.food-outlets .food-outlet p{
+    font-size: 1.2rem;
+}
+
+.food-outlet {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /*`0` (horizontal offset) `1px` (vertical offset) `3px` (blur radius)*/
+}
+
+.food-outlet-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 0;
+}
+
+.food-outlet p {
+    font-size: 1.2rem;
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.picnic-section {
+    background-color: #eaf4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.picnic-section h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.picnic-section p {
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+}
+
+/*Registration*/
+.register * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header3 {
+    background-color: lightblue;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header3 .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    cursor: not-allowed;
+    font-weight: bold;
+}
+
+.header3 .navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.register {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register h2.heading {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register .inputbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register .inputbox input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.register .btn {
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(255, 32, 32);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.register .btn:hover {
+    background-color: red;
+}
+
+.register p {
+    text-align: center;
+    color: #d9534f;
+    font-size: 16px;
+}
+
+/* Event-Management */
+.event-management {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: lightcyan;
+    position: relative; /*Positions the element relative to its normal position*/
+}
+
+.event-management h2, 
+.event-management h3 {
+    color: black;
+}
+
+.event-management h2 {
+    margin-bottom: 20px;
+}
+
+.event-management .navbar {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    padding: 10px 15px; 
+}
+
+.event-management .navbar a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.event-management .navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Form and table styles */
+.event-management form {
+    margin-bottom: 30px;
+}
+
+.event-management form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.event-management form input[type="text"], 
+.event-management form input[type="date"], 
+.event-management form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.event-management form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.event-management form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.event-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.event-management table, 
+.event-management th, 
+.event-management td {
+    border: 1px solid #ddd;
+}
+
+.event-management th, 
+.event-management td {
+    padding: 12px;
+    text-align: left;
+}
+
+.event-management th {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.event-management tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.event-management tr:hover {
+    background-color: #f1f1f1;
+}
+
+.event-management a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.event-management a:hover {
+    text-decoration: underline;
+}
+
+.event-management a[onclick] {
+    color: #d9534f;
+}
+
+.event-management a[onclick]:hover {
+    color: #c9302c;
+}
+
+input[name="email"] {
+    text-transform: lowercase;
+}
