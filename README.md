@@ -29,25 +29,25 @@ This system allows visitors to explore animals, events, and contact information.
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](screenshots/home.png)
+![Home Page](Screenshots/Home.png)
 
 ### ℹ️ About Us Page
-![About Us Page](screenshots/aboutus.png)
+![About Us Page](Screenshots/AboutUs.png)
 
 ### 📷 Gallery Page
-![Gallery Page](screenshots/gallery.png)
+![Gallery Page](Screenshots/Gallery.png)
 
 ### 🐾 Animal Info Page
-![Animal Info Page](screenshots/animalinfo.png)
+![Animal Info Page](Screenshots/AnimalInfo.png)
 
 ### 📅 Events Page
-![Events Page](screenshots/events.png)
+![Events Page](Screenshots/Events.png)
 
 ### ✉️ Feedback Form
-![Feedback Form](screenshots/feedbackform.png)
+![Feedback Form](Screenshots/FeedbackForm.png)
 
 ### 🍔 Food Outlets Page
-![Food Outlets Page](screenshots/foodoutlets.png)
+![Food Outlets Page](Screenshots/FoodOutlets.png)
 
 ### 🔑 Admin Page
-![Admin Page](screenshots/admin.png)
+![Admin Page](Screenshots/Admin.png)
