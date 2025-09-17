@@ -23,7 +23,7 @@ This system allows visitors to explore animals, events, and contact information.
    - Open phpMyAdmin (http://localhost/phpmyadmin)
    - Create a new database named `zoopark`
    - Click Import → choose `database/zoopark.sql` → Go
-4. Open a browser and go to: http://localhost/<your-folder-name>
+4. Open a browser and go to: http://localhost/your-folder-name
 
 
 ## 📸 Screenshots
